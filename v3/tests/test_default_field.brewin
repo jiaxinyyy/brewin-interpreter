@@ -1,0 +1,12 @@
+(class main
+ (field string s)
+ (field int i)
+ (field bool b)
+ (method void main ()
+  (begin
+   (print s)
+   (print i)
+   (print b)
+  )
+ )
+)

@@ -1,0 +1,14 @@
+(class main
+ (field int c 0)
+ (method int foo ()
+   (throw "blah")
+ )
+ (method void main ()
+  (begin
+    (try
+       (set c (call me foo))
+       (print exception)
+    )
+  )
+ )
+)

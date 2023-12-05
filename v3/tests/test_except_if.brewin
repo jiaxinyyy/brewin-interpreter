@@ -1,0 +1,23 @@
+(class main
+ (method int foo ((int a))
+   (if (call me bar)
+     (return a)
+     (return 0)
+   )
+ )
+ (method string bar ()
+   (begin
+     (throw "blah")
+     (return "no")
+   )
+ )
+
+ (method void main ()
+  (begin
+    (try
+      (call me foo 1)
+      (print exception)
+    )
+  )
+ )
+)
